@@ -1,6 +1,9 @@
 @use 'hero';    
 @use 'components/infos_bar';
 @use 'components/buttons';
+@use 'event';
+@use 'variables' as v;
+
 
 * {
     font-family: 'Roboto', sans-serif;
@@ -8,7 +11,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    color: #FFF;
+    color: v.$textColor;
 }
 
 .container {
@@ -22,5 +25,5 @@
 
     @media (max-width: 1024px) {
         max-width: 90%;
-    }
-}
+    } 
+}  
